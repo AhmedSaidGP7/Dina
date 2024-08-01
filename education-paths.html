@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Paths</title>
+    <link rel="stylesheet" href="education.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Select Your Education Path</h1>
+        <div class="education-paths">
+            <div class="bubble">General Secondary</div>
+            <div class="bubble">Technical Secondary</div>
+            <div class="bubble">Industrial Secondary</div>
+            <div class="bubble">STEM</div>
+            <div class="bubble">IGCSE</div>
+            <div class="bubble">American</div>
+            <div class="bubble">IB</div>
+
+        </div>
+
+        <form action="dashboard.html" method="get" class="path-selection-form">
+            <label for="education-path">Select Your Path:</label>
+            <select id="education-path" name="education-path">
+                <option value="general-secondary">General Secondary</option>
+                <option value="technical-secondary">Technical Secondary</option>
+                <option value="industrial-secondary">Industrial Secondary</option>
+                <option value="stem">STEM</option>
+                <option value="igcse">IGCSE</option>
+                <option value="american">American</option>
+                <option value="ib">IB</option>
+
+            </select>
+        
+            <label for="grade">Select Your Grade:</label>
+            <select id="grade" name="grade">
+                <option value="grade-10">Grade 10</option>
+                <option value="grade-11">Grade 11</option>
+                <option value="grade-12">Grade 12</option>
+            </select>
+        
+            <button type="submit" class="btn">Submit</button>
+        </form>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

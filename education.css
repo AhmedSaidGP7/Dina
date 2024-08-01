@@ -1,0 +1,148 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin-top: 20px; /* Space from the top */
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #0f1c2b;
+}
+
+.education-paths {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.bubble {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #0476d0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.bubble:hover {
+    background-color: #0074B7;
+}
+
+.path-selection-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.path-selection-form label {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #162938;
+}
+
+.path-selection-form select {
+    padding: 8px;
+    font-size: 1em;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #162938;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #0f1c2b;
+    transform: translateY(-2px);
+}
+
+/* Style the container */
+.path-selection-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Style the labels */
+.path-selection-form label {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Style the select elements */
+.path-selection-form select {
+    padding: 10px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #2b44d2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+    width: 80%;
+    text-align: center;
+    -webkit-appearance: none; /* For WebKit browsers */
+    -moz-appearance: none; /* For Firefox */
+    appearance: none; /* Removes default arrow */
+}
+
+/* Add a custom arrow */
+.path-selection-form select::after {
+    content: '▼';
+    position: absolute;
+    right: 15px;
+    pointer-events: none;
+}
+
+/* Change color on hover */
+.path-selection-form select:hover {
+    background-color: #0476d0;
+}
+
+/* Style the submit button */
+.path-selection-form .btn {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    background-color: #4052b7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.path-selection-form .btn:hover {
+    background-color: #172b9d;
+}
